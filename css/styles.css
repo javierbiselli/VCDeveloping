@@ -1,0 +1,242 @@
+img {
+    width: 200px
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.1rem;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(to right, #6c1a77, #bb51be);
+}
+
+nav ul {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 2px solid rgb(185, 185, 185);
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+main img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+article {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.titles h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.titles h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.first-section h3, .second-section h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.section-part {
+    width: 40%;
+}
+
+.first-section img {
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.second-section {
+    margin: 15px 0;
+}
+
+.second-section img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+.second-section-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-section-text {
+    width: 50%;
+
+}
+
+form {
+    text-align: center;
+    margin: auto;
+}
+
+form h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+form div input {
+    margin-bottom: 20px;
+}
+
+.main-input {
+    width: 100%;
+}
+
+.main-input input {
+    width: 100%
+}
+
+textarea {
+    height: 150px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 120px;
+    align-self: center;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #6c1a77, #bb51be);
+}
+
+footer div {
+    width: 40%;
+    margin: 15px 0;
+    
+}
+
+footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    
+    nav ul  {
+        flex-basis: 15%;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    main img {
+        height: 100vh;
+    }
+
+    .section-part img {
+        width: 100%;
+        height: auto;
+        max-height: 600px;
+    }
+    footer div {
+        width: 23%;
+    }
+
+    .main-input {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .titles h2 {
+        font-size: 60px;
+        margin: 30px 0;
+    }
+
+    .titles h3 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .text h3, .second-section h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    form h3 {
+        font-size: 60px;
+        margin: 60px 0;
+        margin-bottom: 30px;
+    }
+
+    form input, form textarea {
+        font-size: 16px;
+    }
+
+    footer h4 {
+        font-size: 20px;
+    }
+}
